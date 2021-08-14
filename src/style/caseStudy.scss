@@ -1,0 +1,85 @@
+
+.img-container{
+	margin: 2vh 15vw;
+}
+@media only screen and (max-width: 1000px) {
+	.img-container{
+		margin: 2vh 5vw;
+	}
+	
+}
+
+@media only screen and (max-width: 700px) {
+	.img-container{
+		margin: 2vh 0vw;
+	}
+	
+}
+.img-container>img{
+	width: 100%;
+	object-fit: cover;
+}
+
+h1 {
+    margin: 0 0 0.5em 0;
+    font-size: 4rem;
+    font-weight: 700;
+}
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    margin: 1.5em 0 0.5em 0;
+    font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+    h2 {
+        font-size: 1.9rem;
+    }
+}
+
+h3 {
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #494949;
+}
+@media (max-width: 500px) {
+    h3 {
+        font-size: 1.6rem;
+    }
+}
+
+h4 {
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+h5 {
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+h6 {
+    margin: 1.5em 0 0.5em 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+p,
+ul,
+ol,
+dl,
+blockquote {
+    margin: 0 0 1.5em 0;
+	text-align:justify;
+}
+
+#client{
+	margin-left:2.6em;
+}

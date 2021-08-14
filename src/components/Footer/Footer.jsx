@@ -12,7 +12,7 @@ const Footer = () => {
   const { isEnabled } = githubButtons;
 
   return (
-    <footer className="footer navbar-static-bottom">
+    <footer className="footer navbar-static-bottom" id="footer">
       <Container>
         <span className="back-to-top">
           <Link to="hero" smooth duration={1000}>
@@ -37,12 +37,6 @@ const Footer = () => {
             })}
         </div>
         <hr />
-        <p className="footer__text">
-          © {new Date().getFullYear()} - Template developed by{' '}
-          <a href="https://github.com/cobidev" target="_blank" rel="noopener noreferrer">
-            Jacobo Martínez
-          </a>
-        </p>
 
         {isEnabled && <GithubButtons />}
       </Container>

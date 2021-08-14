@@ -1,0 +1,1 @@
+src>pages -> oasisCaseStudy.js will route to url.com/oasisCaseStudy

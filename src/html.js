@@ -25,6 +25,27 @@ export default function HTML({
         {preBodyComponents}
         <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
         {postBodyComponents}
+
+        <script
+  dangerouslySetInnerHTML={{
+    __html: `
+    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+    
+    var hero_bottom = document.getElementById("hero").offsetTop;
+
+   window.onscroll = function() {
+     var currPos = window.pageYOffset;
+  if(currPos > hero_bottom){
+   document.getElementById("navbar").style.top = "0";
+   }else{
+     document.getElementById("navbar").style.top = "-100px";
+   }
+}
+
+` 
+  }}
+/>
+
       </body>
     </html>
   );

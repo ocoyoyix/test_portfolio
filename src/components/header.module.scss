@@ -1,0 +1,59 @@
+
+.caseStudyNav{
+  background-color: #a4cbe1;
+	height: auto;
+	padding: 1rem;
+	transition:top 0.3s;
+  width:100%;
+  z-index: 100;
+  margin-bottom: 1rem;
+}
+
+.navBar{
+	background-color: #a4cbe1;
+	height: auto;
+	padding: 1rem;
+	position: fixed;
+  top:-100px;
+	transition:top 0.3s;
+  width:100%;
+  z-index: 100;
+}
+
+.navItem {
+  color: white;
+  font-size: 1.8rem;
+  margin-right: 1.5rem;
+  text-decoration: none;
+}
+
+.navList {
+  display: flex;
+  justify-content:flex-end;
+  list-style-type: none;
+  margin: 0;
+}
+
+.navItem:hover {
+  color: #666666;
+}
+
+.activeNavItem {
+  color: #333333;
+}
+
+@media only screen and (max-width: 420px) {
+  .navItem {
+  color: #999999;
+  font-size: 1.25rem;
+  margin-right: 1.3rem;
+  text-decoration: none;
+}
+  .navList {
+  display: flex;
+  justify-content:flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+}
