@@ -6,13 +6,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router} from 'react-router-dom';
 import '../style/main.scss';
 
+export default () => {
+  const { title, lang, description } = headData;
 
   return (
       <Helmet>
         <meta charSet="utf-8" />
-        <title>'Orlando Coyoy'</title>
+        <title>{title || 'Gatsby Simplefolio'}</title>
         <html lang={lang || 'en'} />
-        <meta name="description" content='Orlando Coyoy is a full stack Web Developer with experience in web application development and CMS solutions.' />
+        <meta name="description" content={description || 'Gatsby Simplefolio'} />
       </Helmet>,
         <Home/>
   )
