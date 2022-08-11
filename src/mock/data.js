@@ -94,3 +94,10 @@ export const footerData = {
 export const githubButtons = {
   isEnabled: false, // set to false to disable the GitHub stars/fork buttons
 };
+
+export const heroData = {
+  title: 'Hello, My name is', // Hello, my name is
+  name: 'Orlando Coyoy', // John
+  subtitle: 'I am a Full Stack Web Developer', // I'm the Unknown Developer.
+  cta: 'Learn More', // Know more
+};
